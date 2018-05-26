@@ -1,0 +1,43 @@
+.my_color {
+    background-color: orangered;
+    color: red;
+}
+
+
+
+
+title{
+color: red;
+}
+
+em {
+font-size: 20px;
+
+}
+
+h1{
+background-color: blue;
+color: aquamarine;
+font-size: 66px;
+}
+
+h2{
+    background-color: black;
+    color: yellow;
+    font-style: oblique;
+    font-family: cursive;
+    font-size: 20px;
+}
+
+h3{
+    background-color: bisque;
+    color: black;
+}
+
+body{
+    background-color:aliceblue;
+}
+
+head{
+    color: blueviolet;
+}
