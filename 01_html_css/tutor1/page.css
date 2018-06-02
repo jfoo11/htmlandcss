@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:100,400,900');
+
+
+
+.my_picbox{
+    height: 500px;
+    width: 500px;
+    background-image: url(https://d2d00szk9na1qq.cloudfront.net/Product/3d71a4f3-f5c5-449c-88ed-02b1b7ac06ae/Images/Large_0430310.jpg)
+}
+
+
+
+.my-body{
+	background-image: url('stripe_background.png');
+}
+.my-container{
+	border: 1px solid #aaa;
+	background-color: white;
+	max-width: 400px;
+	margin: 110px auto 10px auto;
+	padding: 1rem;
+	box-shadow: 5px 5px 5px rgba(0,0,0,0.1);
+	font-family: "Lato";
+}
+.my-container h1{
+	text-align: center;
+}
+.my-container ul{
+	max-width: 200px;
+	margin: auto;
+}
+.my-hr{
+	max-width: 300px;
+	border: 10px solid orangered;
+}
+.my-face{
+	display: block;
+	width: 200px;
+	height: 200px;
+	margin: auto; 
+	border-radius: 50%;
+	border: 1px solid #aaa;
+	margin-top: -100px;
+}
+
+
+.my-link{
+	font-weight: 900;
+	text-decoration: none;
+	color: black; 
+	
+}
+.my-link:hover, .my-link:active{
+	color: white;
+	background-color: black;
+	padding-left: 1rem;
+
+	
+}
+.my-link:visited{
+	background-color: pink;
+}
+
+
+
+
+
+.my-form{
+	font-family: "Lato";
+	max-width: 400px;
+	padding: 10px;
+	margin: auto;
+	border: 1px solid black;
+}
+
+.my-form-group{
+	margin: 20px 0;
+}
+
+input[type]{
+	-webkit-appearance: none;/*removes browser override style on mac*/
+
+	width: 100%;
+	font-size: 1.5rem;
+	height: 2rem; 
+	}
+
+input[type=text], 
+input[type=email]{
+
+	border: none;
+	border-bottom: 1px solid black;
+}
+
+input[type=text]:focus, 
+input[type=email]:focus{
+	
+	outline: none;
+	border: 1px solid orangered;
+	color: orangered;
+}
+
+input[type=submit]{
+	
+	height: 3rem;
+	border: none;
+	background-color: black;
+	color: white; 
+}
+
+input[type=submit]:hover{
+	
+	background-color: orangered;
+}
+
+/*this optional style removes the yellow background of chrome's autofill*/
+input[type]:-webkit-autofill {
+    box-shadow: 0 0 0px 1000px white inset;
+}
