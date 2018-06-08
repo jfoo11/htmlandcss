@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>My First Javascript Lesson</title>
+
+    <script language="javascript" type="text/javascript">
+        // all our javascript code here
+
+
+        var number = 1;
+        var name = "Disney"; // global variable
+        var linebreak = "<br />"
+        var names = ["judy", "elsa", "mulan", "anna", "ariel"];
+
+        function writeHTML() {
+            document.writeln("<h1>Hello World!!!</h1>");
+            document.writeln(number);
+            document.write("<br>");
+            document.writeln(name);
+        }
+
+        function processNumber() {
+            var number = document.getElementById("num").value;
+            var RHS = 50;
+
+            if ((number >= 90) && (number <= 100)) {
+                alert("Distinction");
+            }
+            else if ((number > 80) && (number < 90)) {
+                alert("A");
+            }
+            else if (number > RHS) {
+                alert("Pass")
+            }
+            else {
+                alert("Borderline pass");
+            }
+        }
+
+        function processNames() {
+            document.writeln("Number of items in Names:" + names.length + linebreak)
+
+            var count = 0;
+            while (count < names.length) { // start of while loop
+
+                //document.writeln(names[count] + linebreak);
+                console.log(names[count]);
+
+                count++; // count = count + 1
+            } // end of while loop
+
+        }
+
+        // writeHTML();
+
+
+        function sayName() {   // verb usually in small caps; noun with first alphabet in caps, and applies even for multiple nouns
+            var name = "Marvel"; // local variable
+
+            alert(this.name); // "this." is a keyword to access the global variable 
+        }
+
+        function basicCalculation() {
+            var num1 = 5;
+            var num2 = 2;
+
+            document.writeln("5*2=" + (num1 * num2) + linebreak);
+            document.writeln("5/2=" + (num1 / num2) + linebreak);
+            document.writeln("5+2=" + (num1 + num2) + linebreak);
+            document.writeln("5-2=" + (num1 - num2) + linebreak);
+            document.writeln("5%2=" + (num1 % num2) + linebreak);
+        }
+
+    </script>
+</head>
+
+<body>
+    <input type="button" value="Print Text" onclick="writeHTML()" /> // onclick tells javascript to do something
+    <input type="button" value="Say Name" onclick="sayName()" />
+    <input type="button" value="Basic Calculation" onclick="basicCalculation()" />
+    <input type="button" value="Loop through Names" onclick="processNames()" />
+    <hr> Enter a number:
+    <input type="number" id="num" />
+    <input type="button" value="Post number" onclick="processNumber()" />
+</body>
+
+</html>
